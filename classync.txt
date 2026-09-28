@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ATTENDIQ – Attendance Plan + Free Rooms | SRM IST Trichy</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#070b2a;--card:rgba(22,28,86,.62);--line:rgba(140,150,255,.25);--p:#8b5cf6;--b:#3b82f6;--g:#22e3a0;--r:#ff4d6d;--y:#ffc233;--t:#eef0ff;--m:#a3aedb}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 500px at 85% 5%,#5b2bd6aa,transparent),radial-gradient(800px 500px at 0 30%,#1d3fd455,transparent),var(--bg);color:var(--t);font:400 15px/1.55 Poppins,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;align-items:center;gap:22px;padding:12px 5vw;background:#070b2acc;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:.5px}
+.logo i{font-style:normal;display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--b))}
+.logo small{font-weight:400;font-size:12px;color:var(--m);border-left:1px solid var(--line);padding-left:10px}
+nav .l{display:flex;gap:26px;margin:0 auto}nav .l a{color:var(--m);font-weight:500;font-size:14px;padding:4px 0}nav .l a.on{color:#fff;border-bottom:2px solid var(--p)}
+.btn{display:inline-flex;gap:8px;align-items:center;border:0;cursor:pointer;color:#fff;font:600 14px Poppins,sans-serif;padding:12px 26px;border-radius:99px;background:linear-gradient(90deg,var(--p),var(--b));box-shadow:0 6px 22px #6d4cf055}
+.btn.o{background:transparent;border:1px solid var(--p);box-shadow:none}
+.wrap{padding:0 5vw;max-width:1250px;margin:auto}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:center;padding:46px 0 34px}
+.pill{display:inline-block;background:#1c2467;border:1px solid var(--line);padding:6px 16px;border-radius:99px;font-size:13px}
+h1{font-size:clamp(44px,8vw,80px);line-height:1;margin:18px 0 0;font-weight:800;letter-spacing:-1px}h1 b{background:linear-gradient(90deg,var(--p),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sc{font:700 clamp(34px,6vw,54px)/1 Caveat,cursive;margin:6px 0 4px;border-bottom:4px solid var(--p);display:inline-block;padding-bottom:6px}
+.tag{font:500 24px/1.2 Caveat,cursive;color:#dfe3ff;margin:16px 0}
+.hero p{color:#cfd5f5;max-width:470px}.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+.dash{background:linear-gradient(160deg,#141c66cc,#0b1245cc);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 60px #0008;transform:perspective(1200px) rotateY(-4deg)}
+.dash h3{margin:0 0 2px;font-size:19px}.dash .s{color:var(--m);font-size:12px}
+.dr{display:flex;gap:20px;align-items:center;margin-top:18px;flex-wrap:wrap}
+.ring{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;flex:none}
+.ring div{width:114px;height:114px;border-radius:50%;background:#0b1245;display:grid;place-content:center;text-align:center}
+.ring b{font-size:30px;line-height:1}.ring span{font-size:11px;color:var(--m)}
+.st{flex:1;min-width:170px;display:grid;gap:10px}.st div{background:#ffffff0d;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px;color:var(--m)}.st b{display:block;color:#fff;font-size:18px}
+.fl{margin-top:16px;display:grid;gap:8px}.fl div{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--m)}.fl em{flex:1;height:8px;border-radius:9px;background:#ffffff14;overflow:hidden}.fl em i{display:block;height:100%;background:linear-gradient(90deg,var(--g),var(--b))}
+.strip{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;padding:26px 0;border-block:1px solid var(--line)}
+.strip div{display:flex;gap:12px;align-items:flex-start;font-size:12.5px;color:var(--m)}.strip b{display:block;color:#fff;font-size:14px}
+.ic{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:20px;background:#1f2a8c;border:1px solid var(--line)}
+.more{display:grid;grid-template-columns:.9fr 1.6fr;gap:30px;padding:44px 0;align-items:center}
+.more small{letter-spacing:3px;color:var(--p);font-weight:600;font-size:12px}.more h2{font-size:38px;margin:6px 0;line-height:1.15}.more h2 span{color:#a78bfa}
+.g6{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g6 div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;font-size:12.5px;color:var(--m)}.g6 b{display:block;color:#fff;font-size:14px;margin:8px 0 2px}
+#finder{padding:34px 0}#finder h2,.h2{font-size:32px;margin:0 0 4px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:16px}
+.ai{display:flex;gap:10px;flex-wrap:wrap}.ai input{flex:1;min-width:220px}
+input,select{background:#0c1250;color:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:400 14px Poppins,sans-serif;width:100%}
+.ex{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.ex button{background:#ffffff10;color:var(--m);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font:12px Poppins;cursor:pointer}
+.msg{margin-top:12px;font-size:13px;color:#cfe;min-height:20px}.chip{display:inline-block;background:#3b1fa8;border-radius:99px;padding:2px 11px;margin:2px 4px 2px 0;font-size:12px}
+.fs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.fs label{font-size:11px;color:var(--m);display:block;margin-bottom:4px}
+.floor{margin-top:22px}.floor h3{margin:0 0 10px;font-size:16px;display:flex;gap:10px;align-items:center}.floor h3 span{font-size:12px;color:var(--m);font-weight:400}
+.rooms{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.rm{border:1px solid var(--line);border-radius:14px;padding:14px;background:#0f1660}.rm.f{border-color:#22e3a077;box-shadow:inset 0 0 0 1px #22e3a022}.rm.x{opacity:.55}
+.rm b{font-size:16px}.rm .k{font-size:11px;color:var(--m)}.bd{float:right;font-size:10px;padding:2px 8px;border-radius:9px;background:#3b82f633}
+.rm .s{margin-top:8px;font-size:13px;font-weight:600;color:var(--g)}.rm.x .s{color:var(--r)}
+footer{text-align:center;color:var(--m);font-size:12px;padding:30px 5vw 40px;border-top:1px solid var(--line);margin-top:30px}
+.bk{color:var(--m);font-size:13px;display:inline-block;margin:26px 0 8px}#pFind,#pRes{padding:6px 0 30px}[hidden]{display:none!important}
+.ab{display:flex;gap:6px;margin-top:10px}.ab button{flex:1;background:#ffffff12;border:1px solid var(--line);color:#fff;border-radius:9px;padding:6px;font:11px Poppins;cursor:pointer}
+.mc{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.mc input[type=range]{width:170px;padding:0}.lg{display:flex;gap:14px;font-size:12px;color:var(--m);margin-top:10px;flex-wrap:wrap}.lg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px}
+.isow{perspective:1300px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:40px;overflow:hidden}.isow.all{height:740px}.isow.one{height:360px}
+.bld{--rz:-45deg;--rx:65deg;position:relative;width:var(--sz);height:var(--sz);transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateZ(var(--rz))}
+.bld.all{--sz:min(190px,50vw);--zs:128px}.bld.one{--sz:min(260px,64vw);--zs:0px}
+.slab{position:absolute;inset:0;transform:translateZ(calc(var(--z)*var(--zs)));border:3px solid #a9b4ff88;border-radius:8px;background:#1a2380aa;display:grid;grid-template:repeat(5,1fr)/repeat(5,1fr);gap:4px;padding:6px;transform-style:preserve-3d}
+.gr{position:absolute;inset:-34px;transform:translateZ(-16px);background:#1f7a4d99;border:2px solid #5fe3a055;border-radius:14px}.gr span{position:absolute;bottom:4px;left:0;right:0;text-align:center;font:600 10px Poppins;color:#dff}.slab em{position:absolute;left:8px;bottom:-16px;font:10px Poppins;color:#c8cfff}
+.ct{grid-area:2/2/5/5;border:1px dashed #22e3a066;background:#0e4a3a55;border-radius:8px;display:grid;place-items:center;font-size:10px;color:#9fe}
+.tl{border-radius:7px;border:2px solid;display:grid;place-items:center;text-align:center;cursor:pointer;transform:translateZ(8px);transform-style:preserve-3d;font-size:11px;box-shadow:0 8px 14px #0009}
+.tl span{display:block;transform:rotateZ(calc(-1*var(--rz))) rotateX(calc(-1*var(--rx)))}.tl small{font-size:9px}
+.tl.g{border-color:#ffffff1f;background:#ffffff0a;cursor:default;box-shadow:none;transform:none}
+.tl.f{border-color:#22e3a0;background:#0d5a4a}.tl.w{border-color:#ffc233;background:#5a4a0d}.tl.b{border-color:#ff4d6d;background:#5a1330}.tl.sel{outline:3px solid #fff}.tl.cl{box-shadow:0 0 0 3px #a78bfa,0 10px 18px #0009}
+.fb{background:#ffffff12;border:1px solid var(--line);color:#fff;border-radius:99px;padding:6px 12px;font:12px Poppins;cursor:pointer}.fb.act{background:var(--p);border-color:var(--p)}
+.cd{font:700 40px/1.1 Poppins;letter-spacing:1px;margin:6px 0}.bar{height:8px;border-radius:9px;background:#ffffff14;overflow:hidden;margin:6px 0 12px}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--g),var(--b));transition:width 1s}
+.tlm{display:grid;grid-template-columns:repeat(9,1fr);gap:4px;margin:6px 0 14px}.tlm i{height:26px;border-radius:6px;font:10px/26px Poppins;text-align:center;font-style:normal;background:#22e3a033;color:#bff}.tlm i.b{background:#ff4d6d55;color:#fcc}.tlm i.n{outline:2px solid #fff}
+textarea{width:100%;background:#0c1250;color:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;font:14px Poppins;min-height:62px;margin-bottom:10px}.wab{background:#25d366;box-shadow:0 6px 22px #25d36655}
+.sqr{display:flex;gap:12px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}.av{width:46px;height:46px;border-radius:50%;background:#1f2a8c;display:grid;place-items:center;font-size:22px;flex:none}
+.chh{display:flex;gap:10px;align-items:center;background:#0b6b5e;padding:10px 14px;border-radius:14px 14px 0 0;cursor:pointer}.pin{background:#ffffff10;padding:8px 12px;font-size:13px;display:flex;justify-content:space-between;gap:8px;align-items:center;border:1px solid var(--line);border-top:0}
+.msgs{height:46vh;overflow:auto;background:#0b141a;padding:12px;display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-top:0}.bb{max-width:80%;padding:7px 10px;border-radius:10px;background:#202c33;font-size:14px;align-self:flex-start}.bb.me{background:#005c4b;align-self:flex-end}.bb small{display:block;font-size:10px;color:#9db;text-align:right}.bb .w{font-size:11px;color:#7fe}
+.inb{display:flex;gap:8px;background:#111b21;padding:10px;border-radius:0 0 14px 14px}.inb input{border-radius:99px}.snd{width:46px;height:46px;border-radius:50%;padding:0;justify-content:center;background:#25d366;flex:none}.row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.strip div{cursor:pointer}.tb{display:none}
+.pb{position:relative;height:9px;border-radius:9px;background:#ffffff14;margin:8px 0}.pb i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--b),var(--g))}.pb u{position:absolute;top:-3px;width:2px;height:15px;background:#ff4d6d}.pb u.t{background:#22e3a0}table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left}.g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.sim{background:#ffc23322;color:var(--y);border:1px solid var(--y);border-radius:8px;padding:2px 8px;font-size:11px}
+@media(max-width:860px){.tb{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;background:#070b2af5;border-top:1px solid var(--line);padding:6px 0 calc(6px + env(safe-area-inset-bottom,0px))}.tb button{flex:1;background:none;border:0;color:var(--m);font:11px/1.3 Poppins}.tb button.on{color:#fff;font-weight:600}body{padding-bottom:74px}}
+@media(max-width:860px){nav .l{display:none}nav .btn{margin-left:auto}.logo small{display:none}.hero,.more{grid-template-columns:1fr}.dash{transform:none}.strip{grid-template-columns:1fr 1fr}.g6{grid-template-columns:1fr 1fr}.fs{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<nav><a class="logo" href="#home"><i>🎯</i>ATTENDIQ<small>SRM IST Trichy</small></a>
+<div class="l"><a href="#home">Home</a><a href="#dash">Attendance</a><a href="#features">Features</a><a href="#finder">Find Rooms</a><a href="#map">3D Map</a><a href="#squad">Squad</a><a href="#about">About</a></div>
+<a class="btn" href="#login">Get Started →</a></nav><div class="tb"><button data-go="home">🏠<br>Home</button><button data-go="finder">🔍<br>Find</button><button data-go="map">🧊<br>Map</button><button data-go="squad">👥<br>Squad</button><button data-go="dash">🎯<br>Attend</button></div>
+
+<div class="wrap"><main id="pHome">
+<section class="hero"><div>
+<span class="pill">📍 SRM IST Trichy</span>
+<h1>ATTEND<b>IQ</b></h1><div class="sc">Attendance + Free Rooms</div>
+<div class="tag">Attendance is not just a number.<br>It is a plan.</div>
+<p>Turn your timetable and attendance into a clear action plan: what to attend, what you can skip, whether 90% is still reachable. Plus ROOMIQ: free classrooms, a 3D map and squads.</p>
+<div class="cta"><a class="btn" href="#login">Get Started →</a><a class="btn o" href="#finder">🏢 Free Rooms</a><a class="btn o" href="#map">🧊 3D Map</a><a class="btn o" href="#squad">👥 Squad</a></div>
+</div>
+<div class="dash"><h3>Hi, Student 👋</h3><div class="s" id="dnow">—</div>
+<div class="dr"><div class="ring" id="ring"><div><b id="dpct">–</b><span>rooms free</span></div></div>
+<div class="st"><div>Free right now<b id="dfree">–</b></div><div>Longest free stretch<b id="dbest">–</b></div></div></div>
+<div class="fl" id="dfl"></div></div></section>
+
+<section class="strip" id="features">
+<div data-go="features"><span class="ic">📄</span><span><b>Reads 9 Timetables</b>Venues, labs & classrooms from your PDFs.</span></div>
+<div data-go="finder"><span class="ic">🏢</span><span><b>Floor Grid</b>Free rooms organised floor-by-floor.</span></div>
+<div data-go="finder"><span class="ic">✨</span><span><b>AI Room Finder</b>Type it like you'd say it.</span></div>
+<div data-go="map"><span class="ic">🧊</span><span><b>3D Live Map</b>Colour-coded rooms with countdown timers.</span></div>
+<div data-go="squad"><span class="ic">📣</span><span><b>Call the Squad</b>One-tap WhatsApp invite with room & time.</span></div></section>
+
+
+
+</main><section id="pFind" hidden><a class="bk" href="#home">← Home</a><h2 class="h2">Smart-Search Floor Manager</h2><div class="ex" id="qp"></div><div style="color:var(--m)">Traditional filters + natural-language search — same result grid.</div>
+<div class="panel" id="ai"><div class="ai"><input id="q" placeholder='e.g. "I need an AC room on the 4th floor for 2 hours"'><button class="btn" id="go">✨ Find</button></div>
+<div class="ex"><button>AC room on the 4th floor for 2 hours</button><button>non AC lab for 1 hour</button><button>room on the 3rd floor at 2pm on Wednesday for 90 minutes</button></div>
+</div>
+<div class="panel"><div class="fs">
+<div><label>Day</label><select id="fd"><option value="1">Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option></select></div>
+<div><label>Time</label><input type="time" id="ft"></div>
+<div><label>Floor</label><select id="ff"><option value="0">Any</option><option value="1">1st (1xx)</option><option value="2">2nd (2xx)</option><option value="3">3rd (3xx)</option><option value="4">4th (4xx)</option><option value="5">5th (5xx)</option><option value="6">6th (6xx)</option></select></div>
+<div><label>AC</label><select id="fa"><option value="">Any</option><option value="y">AC</option><option value="n">Non-AC</option></select></div>
+<div><label>Free for at least</label><select id="fm"><option value="0">Any</option><option value="30">30 min</option><option value="60">1 hour</option><option value="120">2 hours</option><option value="180">3 hours</option></select></div>
+</div><div id="note" style="font-size:12px;color:var(--m);margin-top:10px"></div></div>
+<div class="cta"><button class="btn" id="fgo">🔍 Find rooms →</button></div></section><section id="pRes" hidden><a class="bk" href="#finder">← New search</a><h2 class="h2">Available classrooms</h2><div class="msg" id="msg"></div><div class="ex"><button id="rshare">🔗 Copy link</button><button id="rmap">🧊 See on 3D map</button></div><div id="out"></div></section>
+<section id="pMap" hidden><a class="bk" href="#home">← Home</a><h2 class="h2">3D Campus Map</h2><div style="color:var(--m)">Rooms change colour with availability. Tap a room for its live countdown.</div>
+<div class="panel"><div class="mc"><button class="btn o" id="mlive">● Live</button><button class="btn o" id="mbest">⭐ Best room now</button><select id="md" style="width:auto"><option value="1">Mon</option><option value="2">Tue</option><option value="3">Wed</option><option value="4">Thu</option><option value="5">Fri</option></select><input type="range" id="mt" min="540" max="1009" step="5"><b id="mtl"></b></div>
+<div class="mc" style="margin-top:10px"><span style="font-size:12px;color:var(--m)">🔄 Rotate</span><input type="range" id="mrot" min="-90" max="0" value="-45"></div>
+<div class="mc" id="fbar" style="margin-top:12px"></div><div class="lg"><span><i style="background:#22e3a0"></i>Free</span><span><i style="background:#ffc233"></i>Free, class within 30 min</span><span><i style="background:#ff4d6d"></i>In use</span><span><i style="background:#a78bfa"></i>Claimed</span><span><i style="background:#555"></i>Labs / stairs / other (not free classrooms)</span></div>
+<div class="isow all" id="isow"><div class="bld" id="bld"></div></div></div>
+<div class="panel" id="rp" style="color:var(--m)">👆 Tap a room on the map — or hit “Best room now”.</div></section><section id="pFeat" hidden><a class="bk" href="#home">← Home</a><h2 class="h2">Features</h2><div style="color:var(--m);margin-bottom:14px">Everything ROOMIQ does — tap a card to open it.</div><div class="g6"><div>📊<b>Data-Driven</b>Built from the official timetables.</div><div>🧮<b>Smart Overlap</b>Merges slots, labs and split FN/AN venues.</div><div>🎯<b>Personalised</b>Filter by floor, AC, type & time.</div><div>🎓<b>Built for Students</b>Simple. Clear. Actionable.</div><div>🕒<b>Any Time, Any Day</b>Plan ahead, not just "now".</div><div>🔄<b>Always Updated</b>Swap the data block for a new semester.</div></div><div class="row"><button class="btn" data-go="finder">🔍 Find rooms</button><button class="btn o" data-go="map">🧊 3D map</button><button class="btn o" data-go="squad">👥 Squad</button></div></section>
+<section id="pAbout" hidden><a class="bk" href="#home">← Home</a><h2 class="h2">About ATTENDIQ</h2><p style="color:var(--m)">A free-classroom finder for the IST block, SRM IST Trichy, built from the 2026-27 odd-semester timetables: II ECE-DS A/B, II BME, III ECE-A/B, III ECE-DS, III BME and IV ECE-A/B.</p><div class="panel"><b>The 10 IST classrooms</b><div class="row"><span class="chip">IST 211</span><span class="chip">IST 225</span><span class="chip">IST 227</span><span class="chip">IST 401</span><span class="chip">IST 411</span><span class="chip">IST 416</span><span class="chip">IST 518</span><span class="chip">IST 519</span><span class="chip">IST 602</span><span class="chip">IST 625</span></div><div style="font-size:12px;color:var(--m)">Labs 107, 108, 309 and TB-106 are not counted as free classrooms. Floor = first digit of the room number. AC tags are illustrative.</div></div><div class="row"><button class="btn" data-go="finder">Find a room →</button><button class="btn o" data-go="map">3D map</button></div></section><section id="pA" hidden></section><button class="btn" id="fab" data-go="advisor" hidden style="position:fixed;right:14px;bottom:86px;z-index:19">💬 Ask Advisor</button><section id="pSq" hidden></section><section id="pSn" hidden></section><section id="pCh" hidden></section><section id="pSi" hidden></section><section id="pCo" hidden></section><section id="pIv" hidden></section></div>
+<footer>ROOMIQ · IST block, SRM IST Trichy · 10 classrooms from the 2026-27 odd-semester timetables · floor = first digit of room number · AC tags illustrative.</footer>
+
+<script>
+const P=[0,[540,590],[590,640],[650,700],[700,750],[750,800],[800,850],[850,900],[910,960],[960,1010]];
+const al=(a,b,d=[1,2,3,4,5])=>d.map(x=>[x,a,b]);
+// Occupancy [day,firstPeriod,lastPeriod] per room, compiled from the 9 timetables
+const B={
+'IST 211':al(6,9),'IST 225':[[1,1,1],[1,3,4],[2,1,4],[3,1,1],[3,3,4],[4,1,4],[5,1,4]],
+'IST 227':[...al(1,4,[1,2,3]),[4,1,2],[4,4,4],[5,1,3]],'IST 411':al(6,9),'IST 416':al(1,4),
+'IST 518':[...al(1,4),...al(6,9)],'IST 519':al(1,4),
+'IST 602':[...al(1,4,[1,2,4,5]),[3,1,3],[3,7,7],[5,8,9],[1,6,7],[2,6,6]],
+'IST 625':[[2,1,2],[3,1,1],[1,1,2],[2,3,3],[1,6,7],[2,7,7],[3,8,9],[5,6,6]],
+'IST 401':[[3,1,1],[4,1,2]],
+'TB-106':[[2,8,9],[3,7,7],[4,3,4],[5,1,1],[2,6,7],[3,6,6]],
+'Lab 107':[[1,8,9],[4,6,7],[1,3,4],[2,1,2],[1,6,7],[4,8,9],[2,6,7],[5,8,9]],
+'Lab 309':[[1,8,9],[4,6,7],[1,3,4],[2,1,2],[1,1,2],[4,1,2],[1,6,7],[4,8,9],[3,8,9],[5,6,7]],
+'Lab 108':[[1,1,2],[4,1,2],[2,1,2],[4,4,4],[5,1,1],[4,3,3],[3,2,2],[3,8,9],[5,6,7],[2,6,7],[5,8,9]]};
+const R=['IST 211','IST 225','IST 227','IST 401','IST 411','IST 416','IST 518','IST 519','IST 602','IST 625'].map(n=>{const d=+n.match(/\d/)[0];return{n,lab:false,fl:d,ac:d>=5}});
+const FN={'-1':'Ground floor',1:'1st floor',2:'2nd floor',3:'3rd floor',4:'4th floor',5:'5th floor',6:'6th floor'},DN=['','Mon','Tue','Wed','Thu','Fri'];
+const $=i=>document.getElementById(i);
+const hm=m=>{const h=Math.floor(m/60),x=m%60;return((h+11)%12+1)+':'+String(x).padStart(2,'0')+(h<12?' AM':' PM')};
+const dur=m=>m>=60?Math.floor(m/60)+'h'+(m%60?' '+m%60+'m':''):m+'m';
+const S={day:1,t:600,fl:0,ac:'',dur:0,lab:''};
+function st(r,day,t){const iv=B[r.n].filter(x=>x[0]==day).map(x=>[P[x[1]][0],P[x[2]][1]]).sort((a,b)=>a[0]-b[0]);
+ let f=t;for(const[s,e]of iv)if(s<=f&&f<e)f=e;
+ if(f!=t)return{free:false,at:f>=1010?null:f};
+ const nx=iv.find(x=>x[0]>t);return{free:true,m:(nx?nx[0]:1010)-t}}
+function render(rs){
+ const rows=R.filter(r=>(!S.fl||r.fl==S.fl)&&(!S.ac||(S.ac=='y')==r.ac)&&(!S.lab||(S.lab=='lab')==r.lab)).map(r=>({r,s:st(r,S.day,S.t)})).filter(x=>x.s.free&&(!S.dur||x.s.m>=S.dur));
+ const by={};rows.forEach(x=>(by[x.r.fl]=by[x.r.fl]||[]).push(x));
+ const ks=Object.keys(by).sort();
+ $('out').innerHTML=ks.length?ks.map(k=>{const a=by[k].sort((x,y)=>(y.s.free-x.s.free)||((y.s.m||0)-(x.s.m||0)));const nf=a.filter(x=>x.s.free).length;
+ return`<div class="floor"><h3>${FN[k]}<span>${nf} available</span></h3><div class="rooms">${a.map(({r,s})=>`<div class="rm ${s.free?'f':'x'}"><span class="bd">${r.ac?'AC':'Non-AC'}</span><b>${r.n}</b><div class="k">${r.lab?'Lab':'Classroom'}</div><div class="s">${s.free?'Free for '+dur(s.m)+(s.m<1010-S.t?' · till '+hm(S.t+s.m):' · rest of day'):'In use'+(s.at?' · free at '+hm(s.at):' · rest of day')}</div><div class="ab"><button data-map="${r.n}">🧊 Map</button><button data-sq="${r.n}">📣 Squad</button></div></div>`).join('')}</div></div>`}).join(''):'<div class="panel">No rooms match. Try relaxing a filter.</div>';
+ return rows}
+function sync(){$('fd').value=S.day;$('ft').value=String(Math.floor(S.t/60)).padStart(2,'0')+':'+String(S.t%60).padStart(2,'0');$('ff').value=S.fl>0?S.fl:0;$('fa').value=S.ac;$('fm').value=[0,30,60,120,180].includes(S.dur)?S.dur:0}
+function readF(){S.day=+$('fd').value;const[h,m]=($('ft').value||'10:00').split(':');S.t=h*60+ +m;S.fl=+$('ff').value;S.ac=$('fa').value;S.dur=+$('fm').value}
+function parse(q){q=q.toLowerCase();const c=[];const o={day:S.day,t:S.t,fl:0,ac:'',dur:0,lab:''};
+ let m;if(m=q.match(/(\d+(?:\.\d+)?)\s*(?:hours?|hrs?|h)\b/)){o.dur=Math.round(m[1]*60)}else if(m=q.match(/(\d+)\s*(?:minutes?|mins?)/))o.dur=+m[1];else if(/half an hour/.test(q))o.dur=30;else if(/an hour/.test(q))o.dur=60;
+ if(o.dur)c.push('≥ '+dur(o.dur));
+ if(/non[- ]?ac/.test(q)){o.ac='n';c.push('Non-AC')}else if(/\bac\b|air.?con/.test(q)){o.ac='y';c.push('AC')}
+ const fm=[[/ground/,-1],[/(first|1st)\s*floor|floor\s*(1|one)\b/,1],[/(second|2nd)\s*floor|floor\s*(2|two)\b/,2],[/(third|3rd)\s*floor|floor\s*(3|three)\b/,3],[/(fourth|4th)\s*floor|floor\s*(4|four)\b/,4],[/(fifth|5th)\s*floor|floor\s*(5|five)\b/,5],[/(sixth|6th)\s*floor|floor\s*(6|six)\b/,6]];
+ for(const[re,n]of fm)if(re.test(q)){o.fl=n;c.push(FN[n])}
+ if(/\blabs?\b/.test(q)){o.lab='lab';c.push('Lab')}else if(/class ?room/.test(q)){o.lab='cls';c.push('Classroom')}
+ const dn=['mon','tue','wed','thu','fri'];dn.forEach((d,i)=>{if(new RegExp('\\b'+d).test(q)){o.day=i+1;c.push(DN[i+1])}});
+ if(/tomorrow/.test(q)){o.day=Math.min(5,(S.day%5)+1);c.push(DN[o.day])}
+ if(m=q.match(/(?:at|from|after)\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/)){let h=+m[1];if(m[3]=='pm'&&h<12)h+=12;if(m[3]=='am'&&h==12)h=0;if(!m[3]&&h<8)h+=12;o.t=h*60+ +(m[2]||0);c.push(hm(o.t))}
+ else if(/after lunch/.test(q)){o.t=800;c.push('after lunch')}
+ return{o,c}}
+function goResults(){location.hash='results?'+new URLSearchParams({d:S.day,t:S.t,f:S.fl,a:S.ac,m:S.dur,l:S.lab,q:S.q||''})}
+function ask(q){const{o}=parse(q);Object.assign(S,o);S.q=q;goResults()}
+function showResults(){const c=[DN[S.day]+' '+hm(S.t)];if(S.fl)c.push(FN[S.fl]);if(S.ac)c.push(S.ac=='y'?'AC':'Non-AC');if(S.dur)c.push('free ≥ '+dur(S.dur));if(S.lab)c.push(S.lab=='lab'?'Lab':'Classroom');
+ let rows=render(),note='';
+ if(!rows.length&&S.fl){const f=S.fl;S.fl=0;rows=render();if(rows.length)note='<br>Nothing on the '+FN[f].toLowerCase()+' fits — showing the closest matches on other floors.';else S.fl=f}
+ if(!rows.length&&S.ac){S.ac='';rows=render();if(rows.length)note+='<br>Dropped the AC preference to find matches.'}
+ const n=rows.length;$('msg').innerHTML=(S.q?'You asked: “'+S.q.replace(/[<>&]/g,'')+'”<br>':'')+c.map(x=>`<span class="chip">${x}</span>`).join('')+`<br><b>${n} room${n==1?'':'s'} available</b>`+note}
+function summary(){const rows=R.map(r=>({r,s:st(r,NOW.day,NOW.t)}));const fr=rows.filter(x=>x.s.free);
+ $('dnow').textContent=DN[NOW.day]+' · '+hm(NOW.t);const p=Math.round(fr.length/rows.length*100);
+ $('dpct').textContent=p+'%';$('ring').style.background=`conic-gradient(var(--g) ${p*3.6}deg,#ffffff1c 0)`;
+ $('dfree').textContent=fr.length+' / '+rows.length+' rooms';const b=fr.sort((a,b)=>b.s.m-a.s.m)[0];$('dbest').textContent=b?b.r.n+' · '+dur(b.s.m):'None';
+ $('dfl').innerHTML=[1,2,3,4,5,6].map(f=>{const a=rows.filter(x=>x.r.fl==f);if(!a.length)return'';const n=a.filter(x=>x.s.free).length;return`<div><span style="width:82px">${FN[f].replace(' floor','')}</span><em><i style="width:${n/a.length*100}%"></i></em>${n}/${a.length}</div>`}).join('')}
+
+const OWN={'IST 416':'II ECE-DS A','IST 411':'II ECE-DS B','IST 518':'III ECE-A (FN) · III ECE-B (AN)','IST 602':'II BME','IST 211':'III BME','IST 519':'III ECE-DS','IST 227':'IV ECE-B','IST 225':'IV ECE-A'};
+function liveNow(){const n=new Date(),d=n.getDay(),t=n.getHours()*3600+n.getMinutes()*60+n.getSeconds();return d>=1&&d<=5&&t>=32400&&t<60600?{day:d,ts:t}:{day:1,ts:36000}}
+const MC={live:true,sel:null,dirty:false,fl:0,...liveNow()},CL={};
+const cdf=x=>{x=Math.max(0,Math.floor(x));return[x/3600|0,(x/60|0)%60,x%60].map(v=>String(v).padStart(2,'0')).join(':')};
+const wa=m=>window.open('https://wa.me/?text='+encodeURIComponent(m),'_blank');
+const stm=r=>st(r,MC.day,MC.ts/60),rm=n=>R.find(x=>x.n==n);
+const PC=[[1,1],[1,2],[1,3],[1,4],[1,5],[2,5],[3,5],[4,5],[5,5],[5,4],[5,3],[5,2],[5,1],[4,1],[3,1],[2,1]],SPOT=[2,6,10],LB={1:['Lab 107','Lab 108'],3:['Lab 309']};
+function build(){const L=MC.fl?[MC.fl]:[1,2,3,4,5,6];$('isow').className='isow '+(MC.fl?'one':'all');$('bld').className='bld '+(MC.fl?'one':'all');
+ $('bld').innerHTML=(MC.fl?'':'<div class="gr"><span>SRM IST Trichy · IST Block</span></div>')+L.map((f,i)=>{const at={},lb={};R.filter(r=>r.fl==f).sort((a,b)=>a.n.localeCompare(b.n)).forEach((r,k)=>at[SPOT[k]]=r);(LB[f]||[]).forEach((l,k)=>lb[SPOT[k]]=l);
+ return`<div class="slab" style="--z:${i}"><em>Floor ${f}</em><div class="ct">🌳 Courtyard</div>${PC.map((p,k)=>{const st=`style="grid-area:${p[0]}/${p[1]}"`,r=at[k];return r?`<div class="tl" ${st} data-r="${r.n}"><span><b>${r.n.replace('IST ','')}</b><br><small></small></span></div>`:`<div class="tl g" ${st}><span>${k%4==0?'🪜':lb[k]?'<small>'+lb[k]+'</small>':''}</span></div>`}).join('')}</div>`}).join('')}
+function paint(){document.querySelectorAll('.tl[data-r]').forEach(el=>{const r=rm(el.dataset.r),s=stm(r);el.className='tl '+(s.free?(s.m<=30?'w':'f'):'b')+(MC.sel==r.n?' sel':'')+(CL[r.n]?' cl':'');el.querySelector('small').textContent=s.free?dur(Math.round(s.m)):(s.at?'→'+hm(s.at).replace(' ',''):'busy')});
+ const fls=[0,1,2,3,4,5,6],fb=$('fbar');
+ if(!fb.children.length)fls.forEach(f=>{const b=document.createElement('button');b.className='fb';b.dataset.f=f;fb.appendChild(b)});
+ [...fb.children].forEach(b=>{const f=+b.dataset.f,rs=R.filter(r=>!f||r.fl==f),n=rs.filter(r=>stm(r).free).length;b.textContent=(f?f+'F':'🏢 All')+' · '+(rs.length?n+'/'+rs.length:'labs');b.classList.toggle('act',MC.fl==f)});
+ $('mtl').textContent=DN[MC.day]+' · '+hm(Math.floor(MC.ts/60))+(MC.live?' · LIVE':'');$('md').value=MC.day;if(document.activeElement!=$('mt'))$('mt').value=Math.floor(MC.ts/60)}
+$('fbar').onclick=e=>{const b=e.target.closest('.fb');if(b){MC.fl=+b.dataset.f;build();paint()}};
+function selectRoom(n){MC.sel=n;MC.dirty=false;const r=rm(n);$('rp').innerHTML=`<h3 style="margin:0;font-size:22px">${n} <span class="bd" style="float:none">${r.ac?'AC':'Non-AC'}</span> <span class="bd" style="float:none">${FN[r.fl]}</span> <span class="bd" style="float:none">${r.lab?'Lab':'Classroom'}</span></h3><div style="font-size:12px;color:var(--m)">${OWN[n]?'Home class: '+OWN[n]:'Shared room / lab'}</div><div id="cs" style="margin-top:14px;font-weight:600"></div><div class="cd" id="cd"></div><div class="bar"><i id="cb"></i></div><div style="font-size:12px;color:var(--m)">Today's periods (1–9)</div><div class="tlm" id="tlm"></div><textarea id="sq" placeholder="Message for your squad"></textarea><div class="ab" style="flex-wrap:wrap"><button class="btn wab" id="bsq" style="flex:2">📣 Call the Squad</button><button id="bcl" style="padding:10px"></button><button id="bcp" style="padding:10px">📋 Copy</button></div>`;
+ $('sq').oninput=()=>MC.dirty=true;paint();updP()}
+function updP(){if(!MC.sel||$('rp').querySelector('#cd')==null)return;const n=MC.sel,r=rm(n),s=stm(r),t=MC.ts/60;
+ const more=s.free?t+s.m<1009.9:true,left=s.free?s.m*60:(s.at?s.at*60-MC.ts:60600-MC.ts);
+ $('cs').textContent=s.free?(more?'🟢 FREE — next class starts in':'🟢 FREE — no more classes today, day ends in'):'🔴 IN USE — free again in';
+ $('cd').textContent=cdf(left);$('cd').style.color=s.free?(s.m<=30?'var(--y)':'var(--g)'):'var(--r)';$('cb').style.width=Math.min(100,left/60/120*100)+'%';
+ const iv=B[n].filter(x=>x[0]==MC.day);$('tlm').innerHTML=[1,2,3,4,5,6,7,8,9].map(p=>{const bz=iv.some(x=>p>=x[1]&&p<=x[2]);return`<i class="${bz?'b':''}${t>=P[p][0]&&t<P[p][1]?' n':''}">${p}</i>`}).join('');
+ const m=s.free?`📍 Heading to ${n}. It's free until ${hm(Math.round(t+s.m))}. Come fast!`+(CL[n]?" I've claimed it 🙋":''):`📍 Heading to ${n}. It frees up at ${s.at?hm(s.at):'—'}. Meet me there!`;
+ if(!MC.dirty&&$('sq').value!=m)$('sq').value=m;$('bcl').textContent=CL[n]?'✅ Claimed':'🙋 Claim';}
+$('bld').onclick=e=>{const t=e.target.closest('.tl');if(t)selectRoom(t.dataset.r)};
+$('rp').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.id=='bsq')location.hash='invite?r='+encodeURIComponent(MC.sel);if(b.id=='bcp'){try{navigator.clipboard.writeText($('sq').value);b.textContent='✔ Copied'}catch(x){}}
+ if(b.id=='bcl'){const s=stm(rm(MC.sel));if(s.free||CL[MC.sel]){CL[MC.sel]=!CL[MC.sel];MC.dirty=false;paint();updP()}else b.textContent='In use now'}};
+$('md').onchange=()=>{MC.live=false;MC.day=+$('md').value;paint();updP()};$('mt').oninput=()=>{MC.live=false;MC.ts=$('mt').value*60;paint();updP()};
